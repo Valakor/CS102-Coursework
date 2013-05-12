@@ -43,7 +43,8 @@ template<typename T> MyList<T>::~MyList() {
 
 template<typename T> void MyList<T>::push_back(T item) {
 	if (size_ >= capacity_) {
-		T *tempArray_ = new T[capacity_*2];
+		capacity_ *= 2;
+		T *tempArray_ = new T[capacity_];
 		for (int i = 0; i < size_; i++) tempArray_[i] = data_[i];
 		delete [] data_;
 		data_ = tempArray_;
