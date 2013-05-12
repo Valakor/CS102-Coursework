@@ -1,0 +1,26 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# Temporary files
+*~
+
+# Qt Files
+Makefile
+moc*
+*.pro
+game_pohlmann
+
+# Doxygen Related files
+html
+latex
