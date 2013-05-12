@@ -24,7 +24,7 @@ to be fully functional.
 Copyright (C) 2013 Matthew Pohlmann
 
 Everything contained within this repository is free software; you can redistribute it and/or modify it under the terms
-of the [GNU General Public License](LICENSE.txt) as published by the Free Software Foundation; either version 2 of the
+of the [GNU General Public License](LICENSE.md) as published by the Free Software Foundation; either version 2 of the
 License, or (at your option) any later version.
 
 The contained materials are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the
