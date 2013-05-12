@@ -46,7 +46,7 @@ can walk over the mine freely.
 #### Missile
 ![alt text](/GamePictures/missile.png "Missile")
 
-This is the missile that the player can fire. It can fly over walls to hit aliens. Its explosion can extend beyond walls, break _Destructible Walls_, and will extend 2 grid spaces. These will be rare, 
+This is the missile that the player can fire. It can fly over walls to hit aliens to a maximum of 5 grid spaces, but does not collide with aliens beforehand. Its explosion can extend beyond walls, break _Destructible Walls_, and will extend 2 grid spaces. These will be rare, 
 and can only be gotten by picking up the _Missile Powerup_. The player starts with one missile, and can only ever have 3 max.
 
 #### Explosion
@@ -63,7 +63,7 @@ in the game at a time.
 #### Health Powerup
 ![alt text](/GamePictures/health.png "Health Powerup")
 
-This is the powerup that gives the player another life. It teleports randomly around the map to locations without players, enemies, walls, or other powerups. There can only ever be two missile powerups
+This is the powerup that gives the player another life. It teleports randomly around the map to locations without players, enemies, walls, or other powerups. There can only ever be two health powerups
 in the game at a time.
 
 #### Alien
@@ -111,3 +111,8 @@ The player will immediately lose a life if he collides with an alien, destroying
 on the battlefield throughout the game. Whenever a player takes life damage, he becomes invulnerable for a short time.
 
 
+### Things to Add
+  + Improved UI
+  + Saved High Score list between sessions
+  + Game Over screen/indication
+  + Missiles should collide with aliens en-route (not only after 5 grid spaces). This currently is not implemented because of the fact that fast-moving missiles sometimes do not detect collisions.
