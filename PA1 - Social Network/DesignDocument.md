@@ -1,7 +1,7 @@
 # Design Document for PA1
 
 ## Purpose/Overview
-In this programming assignment I will create a rudimentary social network. My user-defined `User` and `MyList` classes will be implemented along with the supplied `GMLReader` class that will be used to populate two empty `vector<string>` objects with node and edge data respectively; these vectors will then be parsed to dynamically create User objects in a list of type `MyList<User*>`. The program will additionally have the functionality to read in a command file that allows the adding and removing of friends from each other's `friendList` of type `MyList<int>`. The new social network will then be output in correct GML format after the changes made by the command file as per the instructions of the `GMLWriter` class.
+In this programming assignment I created a rudimentary social network. My user-defined `User` and `MyList` classes were implemented along with a supplied `GMLReader` class that was used to populate two empty `vector<string>` objects with node and edge data respectively; these vectors will then be parsed to dynamically create User objects in a list of type `MyList<User*>`. The program additionally has the functionality to read in a command file that allows the adding and removing of friends from each other's `friendList` of type `MyList<int>`. The new social network will then be output in correct GML format after the changes made by the command file as per the instructions of the `GMLWriter` class.
 
 
 ## Requirements
@@ -73,10 +73,6 @@ bool print(const char* fn, MyList<User*>& users);	// Accepts an output filename 
 														//   the corresponding edge and node data in GML format
 ```
 
-
-## Global Data/Functions
-No global data or functions.
-
 ## High-level Architecture
 The program accepts all input through input files provided at run-time through the command line. An input `.gml` file is read into two empty `vector<string>` objects by the `GMLReader` class, which represent nodes (users) and edges (the shared friendship between users) respectively.
 The user `vector<string>` object is then parsed and used to create User objects that are added to a list of type `MyList<User*>`, whereas the id/friendship `vector<string>` object is parsed through to create friendships between users using the `User` class' `addFriend()` function in a reflexive fashion.
@@ -85,18 +81,9 @@ Lastly, the program will utilize the `GMLWriter` class to output a correctly for
 
 
 ## User Interface
-The UI of this program is very simplistic as it is only command prompt based. The program user will run the program, providing an input `.gml` file, a command file (`.txt`), and an output `.gml` file in that order.
+The UI of this program is very simplistic as it is only command prompt based. The user will run the program, providing an input `.gml` file, a command file (`.txt`), and an output `.gml` file in that order.
 Initial User objects will be created from the data provided in the input `.gml` file, modified by the `.txt` command file, and finally output into another `.gml` file. A user can change the user data in the input `.gml` file and modify the commands in the command file to produce different results.
 
 
 ##Test Cases
 Testing will be done using the provided `test.gml` and `commands.txt` files (in addition to other test cases).
-Possible problems include:
-+ Incorrectly formated `.gml` files (user-made or output from class `GMLWriter`)
-+ Trying to access/modify/friend a `User` object that does not exist in the network
-+ Incorrectly formated command file
-+ Attempting to add a `User` to his/her own `friendList_`
-+ Attempting to remove a friend from `friendList_` that is not currently in the `friendList_` (whether or not the User exists on the network)
-+ Attempting to add a friend from the list of User objects that already exists in `friendList_`
-
-These problems should be avoided using exception handling, where the program throws an appropriate exception in case of an issue.
