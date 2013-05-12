@@ -1,4 +1,4 @@
-# Game - Programming Assignments Private Repository
+# PA5 - World of Bombcraft!
 
 ### Game Information
   + Game Name: World of Bombcraft!
