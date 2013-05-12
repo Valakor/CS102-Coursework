@@ -1,11 +1,10 @@
-# Puzzle - Programming Assignments Private Repository
-### Student Information
-  + Name: Matthew Pohlmann
-  + USC Email: pohlmann@usc.edu
-  + USC ID: 4882116465
+# PA4 - Game time in Qt
+
+PA4 is an extension of PA3; however rather than being terminal-based, PA4 was created using Qt libraries to provide a
+graphical interface for the game.
 
 ### Compile & Run Instructions
-The grader should use the following procedure to compile and run the code:
+To compile and run the code (Qt must be installed):
 ```shell
 qmake -project
 qmake
