@@ -1,19 +1,17 @@
-# Programming Assignments Private Repository
-### Student Information
-  + Name: Matthew Pohlmann
-  + USC Email: pohlmann@usc.edu
-  + USC ID: 4882116465
+# PA2 - Betweenness Centrality
 
 ### Compile & Run Instructions
-##### PA1
-The grader should use the following procedure to compile and run the code:
+This programming assignment builds on top of PA1 and includes all the code associated with PA1. 
+##### To test PA1
+To compile and run the code:
 ```shell
 make
 ./sn tests/test.gml tests/commands.txt output.gml
 ```
-##### PA2
-The grader should use the following procedure to compile and run the code:
+##### To test PA2
+To compile and run the code:
 ```shell
 make
 ./bc tests/bctest.gml bcout.txt
 ```
+For a detailed description of the components of this programming assignment, refer to the [Design Document](DesignDocument.md).
